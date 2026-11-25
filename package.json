@@ -1,0 +1,56 @@
+{
+  "name": "legibilidade-ptbr",
+  "version": "0.1.0",
+  "description": "Índice de legibilidade de Flesch adaptado ao português do Brasil: sílabas, sentenças e nível de escolaridade, sem dependências.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "legibilidade-ptbr": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "legibilidade",
+    "flesch",
+    "portugues",
+    "pt-br",
+    "readability",
+    "silabas",
+    "seo",
+    "acessibilidade",
+    "linguagem-simples"
+  ],
+  "author": "Marcio Moreira",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordmarcio/legibilidade-ptbr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lordmarcio/legibilidade-ptbr/issues"
+  },
+  "homepage": "https://github.com/lordmarcio/legibilidade-ptbr#readme",
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "typescript": "^5.9.3"
+  }
+}
